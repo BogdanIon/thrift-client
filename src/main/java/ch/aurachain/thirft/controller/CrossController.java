@@ -36,6 +36,7 @@ public class CrossController {
         if(value.equals("favicon.ico")){
             return null;
         }
-        return crossPlatformService.get(Integer.valueOf(value));
+        CrossPlatformResource crossPlatformResource = crossPlatformService.get(Integer.valueOf(value));
+        return crossPlatformResource;
     }
 }

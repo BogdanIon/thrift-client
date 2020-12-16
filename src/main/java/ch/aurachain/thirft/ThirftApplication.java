@@ -1,15 +1,12 @@
 package ch.aurachain.thirft;
 
-import ch.aurachain.thirft.generated.CrossPlatformService;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocolFactory;
-import org.apache.thrift.server.TServlet;
-import org.apache.thrift.transport.TTransportException;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import javax.servlet.Servlet;
 
 @SpringBootApplication
 public class ThirftApplication {
