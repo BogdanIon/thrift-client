@@ -33,6 +33,9 @@ public class CrossController {
 
     @GetMapping("/{value}")
     public CrossPlatformResource getValue(@PathVariable("value") String value) throws TException {
+        if(value.equals("favicon.ico")){
+            return null;
+        }
         return crossPlatformService.get(Integer.valueOf(value));
     }
 }
