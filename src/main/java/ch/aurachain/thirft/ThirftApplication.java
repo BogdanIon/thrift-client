@@ -1,6 +1,6 @@
 package ch.aurachain.thirft;
 
-import org.apache.thrift.protocol.TBinaryProtocol;
+import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocolFactory;
 
 import org.springframework.boot.SpringApplication;
@@ -17,8 +17,7 @@ public class ThirftApplication {
 
 	@Bean
 	public TProtocolFactory tProtocolFactory() {
-		return new TBinaryProtocol.Factory();
+		return new TCompactProtocol.Factory();
 	}
-
 
 }
